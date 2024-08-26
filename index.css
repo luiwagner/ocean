@@ -1,0 +1,143 @@
+body {
+    margin: 0px;
+    background-color: rgb(11, 7, 8);
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header_container {
+    position: fixed;
+    width: 100vw;
+    height: 12vh;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: linear-gradient(180deg, rgba(11,7,8,1) 0%, rgba(11, 7, 8, 0) 100%);
+    
+}
+
+.header {
+    width: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header_contact_box {
+    padding: 1rem 1rem 1rem 2rem;
+    border: 2px rgb(255, 255, 255) solid;
+    border-radius: 5px;
+    transition: 200ms;
+}
+
+.header_burgermenue {
+    display: none;
+}
+
+.header_contact_box {
+    left: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    box-shadow: 0px 0px white;
+}
+
+.header_contact_box:hover {
+    transition: 400ms;
+    box-shadow: -10px 10px white;
+    left: 5px;
+    bottom: 5px;
+}
+
+.text {
+    font-family: "Roboto", sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+.text_s {
+    font-size: 26px;
+}
+.text_m {
+    font-size: 36px;
+    font-weight: 900;
+}
+
+.text_xl {
+    font-size: 56px;
+    font-weight: 900;
+}
+
+.main {
+    padding-top: 12vh;
+    height: 88vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.octopus_container {
+    position: relative;
+}
+
+.octopus_text_container {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.octopus_text {
+    margin: 0px 0px 0px 50px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    letter-spacing: 50px;
+    color: rgb(11, 7, 8);
+}
+
+.octopus_image {
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 1600px)  {
+    .header {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 810px)  {
+    .header_container {
+        padding-bottom: 10vh;
+        background: linear-gradient(180deg, rgba(11,7,8,1) 40%, rgba(11, 7, 8, 0) 100%);
+    }
+}
+
+@media screen and (max-width: 630px)  {
+    .header_burgermenue {
+        display: inline;
+        margin-top: 10px;
+    }
+    .header_contact_box {
+        display: none;
+    }
+    
+
+    .octopus_text {
+        top: 10%;
+        left: 50%;
+    }
+
+    .text_xl {
+        font-size: 40px;
+    }
+}
